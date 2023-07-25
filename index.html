@@ -19,8 +19,8 @@
 <body>
 
     <head>
-        <nav class="lg:max-w-screen-xl lg:bg-[#F85559] lg:mx-auto rounded-full">
-            <div class="px-4 py-10 lg:mx-auto">
+        <nav class="lg:max-w-7xl lg:bg-[#F85559] lg:mx-auto rounded-full">
+            <div class="py-10 lg:mx-auto">
                 <div class="lg:grid flex flex-row justify-center mr-0 lg:grid-cols-3 lg:justify-between items-center">
                     <div class="hidden lg:flex justify-around items-center text-white">
                         <p>Home</p>
@@ -34,20 +34,154 @@
                     </div>
                     <div class="hidden lg:block">
                         <div class="form-control lg:flex-row justify-center items-center">
-                            <input type="text" placeholder="Search Here " class=" w-96 input input-bordered rounded-full" />
+                            <input type="text" placeholder="Search Here "
+                                class=" w-96 input input-bordered rounded-full" />
                             <div class="-ml-10"><i class="fa-solid fa-magnifying-glass"></i></div>
-                          </div>
+                        </div>
                     </div>
-                    <div   class="lg:hidden place-items-end w-full pl-52">
+                    <div class="lg:hidden place-items-end w-full pl-52 md:pl-96">
                         <button class="btn btn-square btn-ghost">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
                         </button>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </head>
     <main>
+        <!-- Hero Section -->
+        <!-- <div class="lg:relative"> -->
+        <div class="lg:max-w-7xl  lg:mx-auto ">
+            <div class="carousel  mt-10 lg:mx-auto ">
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <img src="./img/banner1.png" class="lg:w-full bg-blend-darken brightness-50  w-auto " />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./img/banner2.png" class="lg:w-full brightness-50 w-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+
+                    </div>
+                </div>
+
+                <div
+                    class="text-white lg:max-w-md absolute top-[60%] lg:top-[60%] lg:left-[35%] left-[15%] text-center ">
+                    <h1 class="mb-5 lg:text-5xl text-lg font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products.</p>
+                    <button class="btn btn-sm lg:btn-lg lg:btn-primary bg-[#F85559] hover:bg-[#F85559]">Shop Now </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="lg:max-w-screen-xl mx-auto bg-white absolute top-70 z-10">
+            <div class="flex flex-row mx-auto items-center justify-center gap-20">
+                <div class="flex flex-col items-center">
+                    <img src="./img/fruit1.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/fruit1.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/fruit1.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/fruit1.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+            </div>
+        </div> -->
+
+<!-- teams -->
+
+<!-- Page Container -->
+<div class="lg:max-w-7xl m-auto flex items-center justify-center bg-white bg-[url('./img/banner1.png')] bg-no-repeat ">
+    <div class="flex flex-col">
+        <!-- Notes -->
+
+        <div class="flex flex-col mt-8">
+            <!-- Meet the Team -->
+            <div class="container max-w-[1200px] px-4">
+                <!-- Section Header -->
+                <div class="flex flex-wrap justify-center text-center mb-24">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <!-- Header -->
+                        <h1 class="text-white text-4xl font-bold mb-8">
+                            Meet the Team Section
+                        </h1>
+
+                        <!-- Description -->
+                        <p class="text-white  text-lg font-light">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Members -->
+                <div class="flex flex-wrap">
+                    <!-- Member #1 -->
+                    <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                        <div class="flex flex-col">
+                            <!-- Avatar -->
+                            <a href="#" class="mx-auto">
+                                <img class="rounded-full bg-white"
+                                    src="./img/member1.png">
+                            </a>
+
+                            <!-- Details -->
+                            <div class="text-center mt-6">
+                                <!-- Name -->
+                                <h1 class="text-white text-xl font-bold mb-1">
+                                    Tranter Jaskulski
+                                </h1>
+
+                                <!-- Title -->
+                                <div class="text-white  font-light mb-2">
+                                    Founder & Specialist
+                                </div>
+
+                                <!-- Social Icons -->
+                                <div class="flex items-center justify-center">
+                                    <!-- Linkedin -->
+                                    <a href="#" class="flex rounded-full h-10 w-10">
+                                        <i class="fa-brands fa-facebook-messenger text-white"></i>
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" class="flex rounded-full h-10 w-10">
+                                        <i class="fa-brands fa-youtube text-white"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="#" class="flex rounded-full h-10 w-10">
+                                        <i class="fa-brands fa-square-instagram text-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- teams -->
+
+
 
     </main>
     <footer>
